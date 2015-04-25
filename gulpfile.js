@@ -22,13 +22,14 @@ var browser = require('browser-sync');
 var replace = require('gulp-rev-replace');
 var awspublish = require('gulp-awspublish');
 var parallelize = require('concurrent-transform');
-var sass = require('gulp-sass');
+// var sass = require('gulp-sass');
 
 var paths = {
   filesrc:  ['./client/**/*'],
   jadesrc:  ['./client/**/*.jade'],
   htmlsrc:  ['./public/**/*.html'],
   lesssrc:  ['./client/index.less'],
+  // sassrc:   ['./client/*.sass'],
   codesrc:  ['./client/**/*.js'],
   mediasrc: ['./client/assets/**/*', './client/favicon.ico'],
   destination: './public',
