@@ -22,6 +22,7 @@ var browser = require('browser-sync');
 var replace = require('gulp-rev-replace');
 var awspublish = require('gulp-awspublish');
 var parallelize = require('concurrent-transform');
+var sass = require('gulp-sass');
 
 var paths = {
   filesrc:  ['./client/**/*'],

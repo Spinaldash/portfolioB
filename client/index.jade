@@ -11,13 +11,15 @@ html(lang='en', ng-app='poseidon')
     link(rel='shortcut icon', href='/favicon.ico')
   body
     include ./views/nav/nav
-    div(ui-view).uiViewPort
-    .container-fluid
-      .row.selectBar
-        .col-xs-3.selectPanel.blue
-        .col-xs-3.selectPanel
-        .col-xs-3.selectPanel
-        .col-xs-3.selectPanel
+    .container
+      .row
+        .col-xs-12.col-md-4.panelBack
+        .col-xs-12.col-md-4
+        .col-xs-12.col-md-4
+      .row
+        .col-xs-12.col-md-4
+        .col-xs-12.col-md-4
+        .col-xs-12.col-md-4
 
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
