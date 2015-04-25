@@ -2,8 +2,11 @@
 
 (function($){
   $(function(){
-    console.log('running init!');
-    $('.button-collapse').sideNav();
+    $('.button-collapse').sideNav({
+      menuWidth: 240, // Default is 240
+      edge: 'left',
+      closeOnClick: false
+    });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
