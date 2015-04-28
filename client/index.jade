@@ -13,11 +13,11 @@ html(lang='en', ng-app='poseidon')
     link(rel='shortcut icon', href='/favicon.ico')
   body
     include ./views/nav/nav
-    .container
+    .container.pageContainer.z-depth-1
       .row
         .col.s12.m12.l4 
-          .card
-            .card-image.blue-grey.waves-effect.waves-block.borderFix
+          .card.z-depth-3
+            .card-image.blue-grey.waves-effect.waves-block
               .cardSplash.activator
                 .brewIcon.center-align
                 h5.white-text.brewLogo Brew
@@ -27,12 +27,12 @@ html(lang='en', ng-app='poseidon')
               p
                 a(href='#!') Linkarino
             .card-reveal
-              span.card-title.grey-text.text-darken-4 TitleInside
+              span.card-title.grey-text.text-darken-4 Brew
                 i.mdi-navigation-close.right
               p Here is info inside the card. Jon commits to quickly
         .col.s12.m12.l4 
-          .card
-            .card-image.blue-grey.waves-effect.waves-block.borderFix
+          .card.z-depth-3
+            .card-image.blue-grey.waves-effect.waves-block
               .cardSplash.activator
                 .gameswapIcon.center-align
                 h5.white-text.brewLogo Gameswap
@@ -46,8 +46,8 @@ html(lang='en', ng-app='poseidon')
                 i.mdi-navigation-close.right
               p Here is info inside the card. Jon commits to quickly
         .col.s12.m12.l4 
-          .card
-            .card-image.blue-grey.waves-effect.waves-block.borderFix
+          .card.z-depth-3
+            .card-image.blue-grey.waves-effect.waves-block
               .cardSplash.activator
                 .toorIcon.center-align
                 h5.white-text.brewLogo Toor
