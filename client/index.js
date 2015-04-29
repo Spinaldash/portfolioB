@@ -1,5 +1,7 @@
 'use strict';
 
+angular.module('web-portfolio', ['firebase', 'ui.router']);
+
 (function($){
   $(function(){
     $('.button-collapse').sideNav({
