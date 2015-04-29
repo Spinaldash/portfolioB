@@ -10,66 +10,65 @@ html(lang='en', ng-app='poseidon')
     //- link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(type='text/css', rel='stylesheet', href='vendor/materialize/dist/css/materialize.min.css', media='screen,projection')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
-    link(rel='shortcut icon', href='/favicon.ico')
+    link(rel='shortcut icon', href='/assets/images/customIcons/brewIcon_Clear.ico')
+      
+      
   body
     include ./views/nav/nav
     .container.pageContainer.z-depth-1
       .row
-        .col.s12.m12.l4 
+        .col.s12.m6.l4 
           .card.z-depth-3
             .card-image.blue-grey.waves-effect.waves-block
               .cardSplash.activator
                 .brewIcon.center-align
-                h5.white-text.brewLogo Brew
-            .card-content
-              span.card-title.activator.grey-text.text-darken-4 Brew
-                i.mdi-navigation-more-vert.right
-              p
-                a(href='#!') Linkarino
+                h5.white-text.brewLogo.flow-text Brew
+            //- .card-content
+            //-   span.card-title.activator.grey-text.text-darken-4 Brew
+            //-     i.mdi-navigation-more-vert.right
+            //-   p
+            //-     a(href='#!') Linkarino
             .card-reveal
               span.card-title.grey-text.text-darken-4 Brew
                 i.mdi-navigation-close.right
               p Here is info inside the card. Jon commits to quickly
-        .col.s12.m12.l4 
+        .col.s12.m6.l4 
           .card.z-depth-3
             .card-image.blue-grey.waves-effect.waves-block
               .cardSplash.activator
                 .gameswapIcon.center-align
-                h5.white-text.brewLogo Gameswap
-            .card-content
-              span.card-title.activator.grey-text.text-darken-4 Gameswap
-                i.mdi-navigation-more-vert.right
-              p
-                a(href='#!') Linkarino
+                h5.white-text.gameswapLogo.flow-text Game.swap
+            //- .card-content
+            //-   span.card-title.activator.grey-text.text-darken-4 Game.swap()
+            //-     i.mdi-navigation-more-vert.right
+            //-   p
+            //-     a(href='#!') Linkarino
             .card-reveal
               span.card-title.grey-text.text-darken-4 TitleInside
                 i.mdi-navigation-close.right
               p Here is info inside the card. Jon commits to quickly
-        .col.s12.m12.l4 
+        .col.s12.m6.l4 
           .card.z-depth-3
             .card-image.blue-grey.waves-effect.waves-block
               .cardSplash.activator
                 .toorIcon.center-align
-                h5.white-text.brewLogo Toor
-            .card-content
-              span.card-title.activator.grey-text.text-darken-4 Toor
-                i.mdi-navigation-more-vert.right
-              p
-                a(href='#!') Linkarino
+                h5.white-text.brewLogo.flow-text Toor
+            //- .card-content
+            //-   span.card-title.activator.grey-text.text-darken-4 Toor
+            //-     i.mdi-navigation-more-vert.right
+            //-   p
+            //-     a(href='#!') Linkarino
             .card-reveal
               span.card-title.grey-text.text-darken-4 TitleInside
                 i.mdi-navigation-close.right
               p Here is info inside the card. Jon commits to quickly
-      .row
-        .col.s12.m4.l4
-          .squareSplash
             
 
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
     script(src='/vendor/lodash/lodash.min.js')
-    //- script(src='/vendor/firebase/firebase.js')
-    //- script(src='/vendor/angular/angular.min.js')
-    //- script(src='/vendor/angularfire/dist/angularfire.min.js')
+    script(src='/vendor/firebase/firebase.js')
+    script(src='/vendor/angular/angular.min.js')
+    script(src='/vendor/angularfire/dist/angularfire.min.js')
     script(src='/vendor/materialize/dist/js/materialize.min.js')
     script(src=isProd ? '/index.min.js' : '/index.js')
