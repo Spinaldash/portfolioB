@@ -5,8 +5,6 @@ angular.module('web-portfolio')
   $scope.isActive = function(viewLocation){
     return viewLocation === $location.path();
   };
-  console.log('portfolio is included: ', $scope.isActive)
-
   // $scope.afAuth.$onAuth(function(data){
   //   if(data){
   //     $rootScope.activeUser = data;
