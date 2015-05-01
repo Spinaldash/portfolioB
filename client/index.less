@@ -1,7 +1,56 @@
 @import url(http://fonts.googleapis.com/css?family=VT323);
 body{
-  /* padding-top: 41px; */
   background-color: #F8F3EF;
+}
+
+nav ul {
+  width: 100%;
+}
+ul li {
+  width: 33%;
+  text-align: center;
+}
+
+#mobile-demo li {
+  width: 100%
+}
+
+li a {
+  color: #2196f3 !important;
+  font-size: 2rem !important;
+}
+
+/* label color
+ .input-field label {
+   color: #2196f3;
+ }
+
+label focus color
+.input-field input[type=text]:focus + label {
+ color: #2196f3;
+}
+
+.input-field input[type=email]:focus + label {
+ color: #2196f3 !important;
+}
+
+.input-field textarea + label {
+ color: #2196f3 !important;
+}
+label underline focus color
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #2196f3;
+ box-shadow: 0 1px 0 0 #2196f3;
+}
+
+  icon prefix focus color
+.input-field .prefix.active {
+ color: #2196f3;
+} */
+
+
+.divider {
+  background-color: #332B1F;
 }
 
 .pageContainer {
@@ -10,21 +59,28 @@ body{
   min-height: 100vh;
 }
 
+.smaller {
+  width: 90%;
+}
+
 .flowerBar{
   background-color: #2196f3;
   height: 10px;
   width: 100%;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .myPicture {
   background-image: url(/assets/images/pictures/stoic_500px.jpg);
-  height: 250px;
+  min-height: 150px;
+  max-height: 250px;
   border-radius: 15px;
   margin-top: 5px;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 250px;
+  min-width: 150px;
+  max-width: 250px;
 }
 
 .youtube {

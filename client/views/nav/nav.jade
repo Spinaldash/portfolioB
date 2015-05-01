@@ -3,13 +3,13 @@ nav.transparent(role='navigation', ng-controller='NavCtrl')
     //- a#logo-container.brand-logo.center.blue-text(href='#') Michael J. Perez
     ul.right.hide-on-med-and-down
       li(ng-class="{active: isActive('/about')}"): a(ui-sref='about') About
-      li: a(ui-sref='#') Blog
+      //- li: a(ui-sref='#') Blog
       li(ng-class="{active: isActive('/contact')}"): a(ui-sref='contact') Contact
       li(ng-class="{active: isActive('/')}"): a(ui-sref='portfolio') Portfolio
     a.button-collapse.blue-text.left(href='#', data-activates='mobile-demo'): i.mdi-navigation-menu
     ul#mobile-demo.side-nav.blue-text
       li.noPadding: a.center.waves-effect.waves-orange.noPadding(ui-sref='#')
       li.noPadding: a.center.waves-effect.waves-orange.noPadding(ui-sref='about') About
-      li.noPadding: a.center.waves-effect.waves-orange.noPadding(ui-sref='#') Blog
+      //- li.noPadding: a.center.waves-effect.waves-orange.noPadding(ui-sref='#') Blog
       li.noPadding: a.center.waves-effect.waves-orange.noPadding(ui-sref='contact') Contact
       li.noPadding: a.center.waves-effect.waves-orange.noPadding(ui-sref='portfolio') Portfolio
