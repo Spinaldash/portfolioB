@@ -1,6 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=VT323);
+
+@background: #033649;
+@foreground: #E8DDCB;
+
 body{
-  background-color: #F8F3EF;
+  background-color: @background;
 }
 
 nav ul {
@@ -9,6 +13,10 @@ nav ul {
 ul li {
   width: 33%;
   text-align: center;
+}
+
+.noMargin {
+  margin: 0;
 }
 
 #mobile-demo li {
@@ -54,7 +62,7 @@ label underline focus color
 }
 
 .pageContainer {
-  background-color: #F5E0D3;
+  background-color: @foreground;
   padding-top: 65px;
   min-height: 100vh;
 }
@@ -71,16 +79,41 @@ label underline focus color
   margin-bottom: 20px;
 }
 
+.outerBorder{
+  margin: 0 auto;
+  height: 125px;
+  width: 125px;
+  margin-top: 10px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+}
+
+.avatarBox{
+  margin: 0 auto;
+  height: 150px;
+  width: 150px;
+  position: relative;
+}
+
+.aboutHeader{
+
+}
+
+.avatar{
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
 .myPicture {
-  background-image: url(/assets/images/pictures/stoic_500px.jpg);
-  min-height: 150px;
-  max-height: 250px;
-  border-radius: 15px;
-  margin-top: 5px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-width: 150px;
-  max-width: 250px;
+  position: absolute;
+  padding: 1px;
+  border: 1px solid #F5E0D3;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 0px #c2c2c2;
 }
 
 .youtube {
