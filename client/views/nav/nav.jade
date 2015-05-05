@@ -1,6 +1,7 @@
 nav.transparent(role='navigation', ng-controller='NavCtrl')
   .nav-wrapper.container
-    //- a#logo-container.brand-logo.center.blue-text(href='#') Michael J. Perez
+    a#logo-container.brand-logo(ui-sref='portfolio')
+      img.MJ-logo(src='/assets/images/customIcons/MJ-Logo-Green.png')
     ul.right.hide-on-med-and-down
       li(ng-class="{active: isActive('/about')}"): a(ui-sref='about') About
       //- li: a(ui-sref='#') Blog
