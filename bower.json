@@ -1,9 +1,9 @@
 {
-  "name": "poseidon",
+  "name": "Michaeljperez.net",
   "version": "0.0.1",
-  "homepage": "https://github.com/coding-house-apr2015/poseidon",
+  "homepage": "https://github.com/Spinaldash",
   "authors": [
-    "Chyld Medford <chyld.medford@gmail.com>"
+    "Michael J. Perez <mjosephvp@gmail.com>"
   ],
   "license": "BSD",
   "dependencies": {
