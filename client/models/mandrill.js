@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('web-portfolio')
-.factory('Mandrill', function($rootScope, $http){
+.factory('Mandrill', function($rootScope, $http, $state){
   function Mandrill(){
   }
 
@@ -22,11 +22,17 @@ angular.module('web-portfolio')
         'html': message.body
     }})
     .then(function(response){
-      console.log('response is:', response);
+      swal({
+        title:'Thank you!',
+        text:'You successfully sent an email to mjosephvp@gmail.com',
+        type: 'success',
+      }, function() {
+        $state.go('portfolio');
+      });
     })
     .catch(function(response){
-      console.log('response is:', response);
-    })
+      swal('Sorry!', 'Something went wrong. Please try again.', 'error')
+    });
   }
 
   return Mandrill;
