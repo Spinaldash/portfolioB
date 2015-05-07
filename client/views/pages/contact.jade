@@ -2,19 +2,19 @@ h1 Contact
 .row(ng-controller='ContactCtrl')
   .col.s12
     .row
-      .input-field.col.s6
-        i.mdi-action-account-circle.prefix
-        input#name.validate(type='text', ng-model='message.name')
-        label(for='name') Name
-      .input-field.col.s6
-        i.mdi-communication-email.prefix
-        input#email.validate(type='email', ng-model='message.email')
-        label(for='email') Email
-      .input-field.col.s12
-        i.mdi-editor-mode-edit.prefix
-        textarea#message.materialize-textarea(ng-model='message.body')
-        label(for='message') Message
-      .col.s12
-        button.btn.waves-effect.waves-light(type="submit", ng-click='submitMail(message)') Submit
-          i.mdi-content-send.right
-      
+      form(name='messageForm')
+        .input-field.col.s6
+          i.mdi-action-account-circle.prefix
+          input#name.validate(type='text', ng-model='message.name', name='name', required)
+          label(for='name') Name
+        .input-field.col.s6
+          i.mdi-communication-email.prefix
+          input#email.validate(type='email', ng-model='message.email', name='email', required)
+          label(for='email') Email
+        .input-field.col.s12
+          i.mdi-editor-mode-edit.prefix
+          textarea#message.materialize-textarea(ng-model='message.body', name='body', required)
+          label(for='message') Message
+        .col.s12.center
+          button.btn.waves-effect.waves-light(type="submit", ng-click='submitMail(message)', ng-disabled='messageForm.$invalid') Submit
+            i.mdi-content-send.right
