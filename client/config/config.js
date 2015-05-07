@@ -7,7 +7,7 @@ angular.module('web-portfolio')
     $stateProvider
       .state('portfolio', {url:'/', templateUrl:'/views/pages/portfolio.html', controller:'PortfolioCtrl'})
       .state('about', {url:'/about', templateUrl:'views/pages/about.html'})
-      .state('contact', {url:'/contact', templateUrl:'views/pages/contact.html'});
+      .state('contact', {url:'/contact', templateUrl:'views/pages/contact.html', controller:'ContactCtrl'});
       // .state('register', {url:'/register', templateUrl:'/views/users/users.html', controller:'UsersCtrl'})
       // .state('login', {url:'/login', templateUrl:'/views/users/users.html', controller:'UsersCtrl'})
       //
