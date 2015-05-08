@@ -7,11 +7,11 @@
   .col.s12
     .row
       form(name='messageForm')
-        .input-field.col.s6
+        .input-field.col.s12.m6
           i.mdi-action-account-circle.prefix
           input#name.validate(type='text', ng-model='message.name', name='name', required)
           label(for='name') Name
-        .input-field.col.s6
+        .input-field.col.s12.m6
           i.mdi-communication-email.prefix
           input#email.validate(type='email', ng-model='message.email', name='email', required)
           label(for='email') Email

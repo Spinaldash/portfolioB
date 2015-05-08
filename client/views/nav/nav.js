@@ -5,6 +5,13 @@ angular.module('web-portfolio')
   $scope.isActive = function(viewLocation){
     return viewLocation === $location.path();
   };
+
+  $('.button-collapse').sideNav({
+      menuWidth: 240, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
   // $scope.afAuth.$onAuth(function(data){
   //   if(data){
   //     $rootScope.activeUser = data;

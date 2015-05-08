@@ -1,14 +1,14 @@
 nav.black(role='navigation', ng-controller='NavCtrl')
   .nav-wrapper.container
     ul.right.hide-on-med-and-down
-      li(ng-class="{active: isActive('/')}"): a#logo-container(ui-sref='portfolio')
+      li: a#logo-container(ui-sref='portfolio')
         img.MJ-logo(src='/assets/images/customIcons/MJ-Logo-Green.png')
-      li(ng-class="{active: isActive('/')}"): a(ui-sref='portfolio') Portfolio
-      li(ng-class="{active: isActive('/about')}"): a(ui-sref='about') About
+      li: a(ng-class="{active: isActive('/')}", ui-sref='portfolio') Portfolio
+      li: a(ng-class="{active: isActive('/about')}", ui-sref='about') About
       //- li: a(href='http://blog.michaeljperez.net') Blog
-      li(ng-class="{active: isActive('/contact')}"): a(ui-sref='contact') Contact
+      li: a(ng-class="{active: isActive('/contact')}", ui-sref='contact') Contact
       
-    a.button-collapse.blue-text.left(href='#', data-activates='mobile-demo'): i.mdi-navigation-menu
+    a.button-collapse.mj-green.left(href='#', data-activates='mobile-demo'): i.mdi-navigation-menu
     ul#mobile-demo.side-nav.blue-text
       li.noPadding: a.center.waves-effect.waves-orange.noPadding(ui-sref='#')
       li.noPadding: a.center.waves-effect.waves-orange.noPadding(ui-sref='about') About
