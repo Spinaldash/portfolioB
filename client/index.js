@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('web-portfolio', ['firebase', 'ui.router', 'ngAnimate']);
+angular.module('web-portfolio', ['firebase', 'ui.router']);
 
 (function($){
   $(function(){
