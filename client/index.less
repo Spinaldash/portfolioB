@@ -277,3 +277,17 @@ label underline focus color
 .card {
   border-radius: 5px;
 }
+
+/* ************ Animations ************ */
+
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+[ui-view].ng-enter { animation: slideOutLeft 1s both ease-in; z-index: 8888; }
+[ui-view].ng-leave { animation: slideInRight 1s both ease-in; z-index: 9999; }

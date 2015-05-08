@@ -17,6 +17,7 @@
     "materialize": "~0.96.1",
     "angular-ui-router": "~0.2.14",
     "hover": "~2.0.2",
-    "sweetalert": "~0.5.0"
+    "sweetalert": "~0.5.0",
+    "ngAnimate": "*"
   }
 }
